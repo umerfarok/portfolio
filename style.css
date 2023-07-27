@@ -1,0 +1,254 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.container {
+    height: 100%;
+    margin: 4px 23px 0px 23px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    grid-gap: 1rem;
+    grid-template-areas:
+        'personal edu edu edu'
+        'personal work work work'
+    ;
+}
+
+.container #personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.design {
+    box-shadow: 0px 0px 4px rgba(141, 137, 137, 0.9);
+    background-color: white;
+}
+.design .box {
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    border-bottom: 1px solid grey;
+    width: 80%;
+    height: 70px;
+    margin: 3px 0px 1px 22px;
+}
+
+.box h1 {
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    font-size: 1rem;
+}
+
+.box .institute {
+    font-size: 12px;
+    color: rgb(4, 147, 128);
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.box .institute:hover {
+    color: rgb(7, 102, 89);
+}
+#personal {
+    grid-area: personal;
+    grid
+
+}
+
+#personal img {
+    object-fit: contain;
+    width:100%;
+    /* height: 55%; */
+
+
+
+
+
+}
+
+.progress {
+    position: relative;
+    width: 85%;
+    border-radius: 8px;
+
+    height: 10px;
+    background-color: #f3f2f2;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.animation {
+    width: 75%;
+    height: 100%;
+    border-radius: 7px;
+    background: rgb(4, 147, 128);
+}
+
+.animation2 {
+    position: absolute;
+    font-size: 8px;
+    left: 50%;
+    top: 0.5px;
+    color: white;
+
+}
+
+.progress0 {
+    position: relative;
+    width: 85%;
+    border-radius: 8px;
+
+    height: 10px;
+    background-color: #f3f2f2;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.animation0 {
+    width: 80%;
+    height: 100%;
+    border-radius: 7px;
+    background: rgb(4, 147, 128);
+}
+
+.animation20 {
+    position: absolute;
+    font-size: 8px;
+    left: 50%;
+    top: 0.5px;
+    color: white;
+
+}
+
+.progress8 {
+    position: relative;
+    width: 85%;
+    border-radius: 8px;
+
+    height: 10px;
+    background-color: #f3f2f2;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.animation8 {
+    width: 90%;
+    height: 100%;
+    border-radius: 7px;
+    background: rgb(4, 147, 128);
+}
+
+.animation28 {
+    position: absolute;
+    font-size: 8px;
+    left: 50%;
+    top: 0.5px;
+    color: white;
+
+}
+
+.progress9 {
+    position: relative;
+    width: 85%;
+    border-radius: 8px;
+
+    height: 10px;
+    background-color: #f3f2f2;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.animation9 {
+    width: 60%;
+    height: 100%;
+    border-radius: 7px;
+    background: rgb(4, 147, 128);
+}
+
+.animation29 {
+    position: absolute;
+    font-size: 8px;
+    left: 50%;
+    top: 0.5px;
+    color: white;
+
+}
+
+.about .first {
+    color: rgb(4, 147, 128);
+    margin: 7px 12px 2px 0px;
+    display: inline-block;
+    width: 90%;
+
+}
+
+section p {
+    display: inline-block;
+    width: 90%;
+    opacity: 0.5;
+
+
+
+    margin: 7px 0px 3px 0px;
+}
+
+#personal #name {
+    border-bottom: 1px solid rgba(164, 162, 162, .5);
+}
+
+#edu {
+    grid-area: edu;
+}
+
+#work {
+    grid-area: work;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px 1px 0px;
+    padding: 12px;
+    text-align: center;
+    background-color: rgb(4, 147, 128);
+    color: white;
+
+
+
+}
+
+#footer p i:hover {
+    color: rgb(153, 230, 219);
+    cursor: pointer;
+}
+
+#edu>h1 {
+    border-bottom: 2px solid rgb(4, 147, 128);
+    column: black;
+    opacity: 0.8;
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+#work>h1 {
+    border-bottom: 2px solid rgb(4, 147, 128);
+    column: black;
+    font-size: 15px;
+    padding-left: 12px;
+    opacity: 0.9;
+}
+@media(max-width:1000px){
+    .container{
+        width: 100%;
+        grid-template-areas:
+        'personal personal'
+        'edu edu'
+        'work work'
+    ;
+    
+}
+    }
